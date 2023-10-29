@@ -1,7 +1,7 @@
 all: world
 CXX?=g++
 CXXFLAGS?=--std=c++17 -Wall
-INCLUDES:=-I./include -I.
+INCLUDES:=-I./include -I./examples/include -I.
 
 OBJS:= \
 	objs/main.o
@@ -11,7 +11,7 @@ include Makefile.inc
 
 world: parser
 
-objs/main.o: main.cpp
+objs/main.o: examples/main.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c -o $@ $<;
 
 parser: $(CMDPARSER_OBJS) $(OBJS)
