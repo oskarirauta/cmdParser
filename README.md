@@ -1,3 +1,6 @@
+# Repository archived
+This is replaced by [cmdparser_cpp](https://github.com/oskarirauta/cmdparser_cpp)
+
 # cmdParser
 C++ Command Line Parser
 
